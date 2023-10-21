@@ -20,6 +20,21 @@
         public string Nationality { get; set; } = null!;
         public string ResidentialAddress { get; set; } = null!;
         public Guid MaritalStatusId { get; set; }
-        
+        public string? SpouseName { get; set; }
+        public Guid? SpouseId { get; set; }
+        public DateOnly? WeddingDate { get; set; }
+        public int? NumberOfChildren { get; set; }
+        public bool FamilyRelations { get; set; }
+        public Guid? FirstRelationId { get; set; }
+        public Guid? LastRelationId { get; set; }
+        public string Occupation { get; set; } = null!;
+        public string? Employer { get; set; }
+        public Guid EducationslLevelId { get; set; }
+        public bool Baptized { get; set; }
+        public bool TithePayer { get; set; }
+        public bool WelfareContributor { get; set; }
+        public Guid DepartmentId { get; set; }
+        public Guid BranchId { get; set; }
+
     }
 }
