@@ -2,7 +2,7 @@
 {
     public class MaritalStatus
     {
-        public int MaritalStatusId { get; set; }
+        public Guid MaritalStatusId { get; set; }
         public string Status { get; set; } = null!;
     }
 }

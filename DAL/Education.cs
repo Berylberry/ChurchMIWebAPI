@@ -2,7 +2,7 @@
 {
     public class Education
     {
-        public int EducationId { get; set; }
+        public Guid EducationId { get; set; }
         public string Level { get; set; } = null!;
     }
 }
