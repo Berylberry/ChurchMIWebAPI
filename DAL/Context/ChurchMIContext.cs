@@ -18,5 +18,10 @@ namespace ChurchMI.DAL.Context
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<Branch> Branches { get; set; }
         public virtual DbSet<Announcement> Announcements { get; set; }
+
+
+        IConfigurationRoot configuration = new ConfigurationBuilder().SetBasePath(AppDomain.CurrentDomain.BaseDirectory).AddJsonFile("appsettings.json").Build();
+
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer
     }
 }
