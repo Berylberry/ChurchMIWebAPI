@@ -46,5 +46,7 @@
         public Guid BranchId { get; set; }
         public virtual Branch Branch { get; set; }
         public string? ProfilePicture { get; set; }
+        public DateTime DateCreated { get; set; }
+        public DateTime? DateModified { get; set; }
     }
 }

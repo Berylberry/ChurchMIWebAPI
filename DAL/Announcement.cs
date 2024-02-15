@@ -9,5 +9,9 @@
         public Guid? BranchId { get; set; }
         public virtual Branch? Branch { get; set; }
         public string? AnnouncementImage { get; set; }
+        public DateTime DateCreated { get; set; }
+        public Guid? CreatedById { get; set; }
+        public virtual Member? CreatedBy { get; set; }
+        public DateTime? DateModified { get; set; }
     }
 }
